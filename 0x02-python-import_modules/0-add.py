@@ -6,4 +6,4 @@ b = 2
 
 result = add(a, b)
 
-print(f"{a} + {b} = {result}") 
+print(f"{a} + {b} = {result}\n") 
