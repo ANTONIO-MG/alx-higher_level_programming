@@ -6,4 +6,6 @@ are longer than the other 2"""
 
 
 class Rectangle:
-    pass
+
+	"""This is a empty class that describes a rectangle"""
+	pass
