@@ -10,8 +10,8 @@ from models.base import Base
 
 class Rectangle(Base):
     """
-    	A rectangle with width and height and x y attributes and
-	display, delete, update and area methods
+    A rectangle with width and height and x y attributes and
+    display, delete, update and area methods
     """
 
     def __init__(self, width, height, x=0, y=0, id=None):
@@ -72,7 +72,7 @@ class Rectangle(Base):
     @x.setter
     def x(self, value):
         """
-        sets teh value of private attribute X
+        sets the value of private attribute X
         """
         self.check_integer_parameter(value, 'x')
 
@@ -86,9 +86,9 @@ class Rectangle(Base):
         return self.__y
 
     @y.setter
-    def y(self, value:
+    def y(self, value):
         """
-        sets teh value of private attribute Y
+        sets the value of private attribute Y
         """
         self.check_integer_parameter(value, 'y')
 
@@ -129,10 +129,9 @@ class Rectangle(Base):
     def __str__(self):
         """
         returns the string representation of the of the class
-	"""
+        """
         return '[Rectangle] ({:d}) {:d}/{:d} - {:d}/{:d}'.format(
-            self.id, self.x, self.y, self.width, self.height
-        )
+            self.id, self.x, self.y, self.width, self.height)
 
     def update(self, *args, **kwargs):
         """
@@ -162,6 +161,4 @@ class Rectangle(Base):
             'width': self.width,
             'height': self.height,
             'x': self.x,
-            'y': self.y
-        }
-
+            'y': self.y}
