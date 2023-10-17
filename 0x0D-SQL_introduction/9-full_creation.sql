@@ -1,6 +1,6 @@
 -- script that creates a table second_table, if already exists should not fail
 -- first we create the table
-CREATE TABLE IF NOT IXISTS second_table (
+CREATE TABLE IF NOT EXISTS second_table (
     id INT,
     name VARCHAR(256),
     score INT
