@@ -15,5 +15,5 @@ things.forEach(element => {
 if (!isNaN(number)) {
   console.log(`My number is ${number}`);
 } else {
-    console.log('Not a number');
+  console.log('Not a number');
 }
