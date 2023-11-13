@@ -8,8 +8,12 @@ const things = process.argv.slice(2);
 things.forEach(element => {
   count++;
   if (count === 1) {
-    number = element;
+    number = parseInt(element);
   }
 });
 
-console.log('My number: ' + parseInt(number));
+if (!isNaN(number)) {
+  console.log(`My number is ${number}`);
+} else {
+    console.log('Not a number');
+}

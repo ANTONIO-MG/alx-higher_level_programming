@@ -9,3 +9,7 @@ things.forEach(element => {
     console.log(element);
   }
 });
+
+if (count === 0) {
+  console.log('No argument');
+}
