@@ -7,8 +7,6 @@ const things = process.argv.slice(2);
 
 loop = parseInt(things[0]);
 
-console.log(loop);
-
 if (loop < 0 || loop > 0) {
   while (loop > 0) {
     console.log('C is fun');
