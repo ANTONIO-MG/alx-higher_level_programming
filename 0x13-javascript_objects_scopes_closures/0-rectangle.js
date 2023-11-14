@@ -2,7 +2,8 @@
 
 // empty class Rectangle that defines a rectangle.
 class Rectangle {
-  constructor () {
-
+  constructor(w, h) {
+    this.width = w;
+    this.height = h;
   }
 }
