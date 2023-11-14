@@ -13,7 +13,7 @@ inner = outer;
 if (outer < 0 || outer > 0) {
   while (outer > 0) {
     while (inner > 0) {
-      string += 'x';
+      string += 'X';
       inner--;
     }
     console.log(string);
