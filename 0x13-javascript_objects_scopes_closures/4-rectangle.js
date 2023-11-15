@@ -19,14 +19,14 @@ module.exports = class Rectangle {
     }
   }
 
-  print () {
+  print (char = 'X') {
     let outer = this.height;
     let inner = this.width;
     let string = '';
 
     while (outer > 0) {
       while (inner > 0) {
-        string += 'X';
+        string += char;
         inner--;
       }
       console.log(string);
