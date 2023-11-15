@@ -1,4 +1,4 @@
-#!usr/bin/node
+#!/usr/bin/node
 
 // script that imports a dict of occurrences by user id and computes a dict.
 
