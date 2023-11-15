@@ -3,13 +3,19 @@
 // script that imports a dict of occurrences by user id and computes a dict.
 
 const dict = require('./101-data').dict;
-const newDict = {};
 
-Object.keys(dict).map(function (key) {
-  if (!Array.isArray(newDict[dict[key]])) {
-    newDict[dict[key]] = [];
+function main (inputDict) {
+  const resultDict = {};
+
+  for (const userId in inputDict) {
+    const occurrences = inputDict[userId];
+
+    if (!resultDict[occurrences]) {
+      resultDict[occurrences] = [];
+    }
+
+    resultDict[occurrences].push(userId.toString());
   }
-  newDict[dict[key]].push(key);
-});
 
-console.log(newDict);
+  return resultDict;
+}
