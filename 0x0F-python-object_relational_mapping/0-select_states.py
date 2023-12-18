@@ -1,11 +1,15 @@
 #!/usr/bin/python3
-#  script that lists all states from the database hbtn_0e_0_usa
+"""
+script that lists all states from the database hbtn_0e_0_usa
+"""
 
 import sys
 import MySQLdb
 
 if __name__ == '__main__':
-    # imports the database and then makes a query
+    """
+    imports the database and then makes a query
+    """
     connection = MySQLdb.connect(
             host="localhost",
             port=3306,
