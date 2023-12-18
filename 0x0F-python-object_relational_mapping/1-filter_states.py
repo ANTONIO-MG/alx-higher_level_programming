@@ -16,11 +16,13 @@ if __name__ == '__main__':
             user=sys.argv[1],
             passwd=sys.argv[2],
             db=sys.argv[3]
-    )
+            )
 
     mycursor = connection.cursor()
 
-    mycursor.execute("select * from states where name like 'N%'")
+    mycursor.execute(
+            "select * from states where name like 'N%' order by id asc"
+            )
 
     for items in mycursor:
         print(items)
