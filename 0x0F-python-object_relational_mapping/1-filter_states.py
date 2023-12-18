@@ -21,7 +21,7 @@ if __name__ == '__main__':
     mycursor = connection.cursor()
 
     mycursor.execute(
-            "select * from states where name like 'N%' order by id asc"
+            "select * from states where name like binary 'N%' order by id asc"
             )
 
     for items in mycursor:
