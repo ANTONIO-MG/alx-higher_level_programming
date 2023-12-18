@@ -16,7 +16,7 @@ if __name__ == '__main__':
 
     mycursor = connection.cursor()
 
-    mycursor.execute("select * from states")
+    mycursor.execute("select * from states order by id asc")
 
     for items in mycursor:
         print(items)
