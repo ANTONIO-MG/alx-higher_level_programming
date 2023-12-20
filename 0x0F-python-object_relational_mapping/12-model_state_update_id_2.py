@@ -28,14 +28,11 @@ if __name__ == '__main__':
     # creates a state object
     new = State(name='Louisiana')
 
-    # adds the data to the database
-    session.add(new)
-
-    session.commit()
-
     # create a python object and query the database and hold the details
-    data = session.query(State).order_by(State.id)
+    data = session.query(State).filter(State.id == '2').first()
 
-    for items in data:
-        if 'Louisiana' in items.name:
-            print(f"{items.id}")
+    # change the name using the python object
+    data.name = 'New Mexico'
+
+    # commit the new changes to the database
+    session.commit()
