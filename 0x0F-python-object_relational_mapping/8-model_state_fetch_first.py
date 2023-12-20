@@ -28,7 +28,7 @@ if __name__ == '__main__':
     # create a python object and query the database and hold the details
     data = session.query(State).order_by(State.id).first()
 
-    if data == None:
-        print("Nothing\n")
+    if data is None:
+        print("Nothing")
     else:
         print(f"{data.id}: {data.name}")
