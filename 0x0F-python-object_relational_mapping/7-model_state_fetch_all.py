@@ -13,7 +13,7 @@ h = 'localhost'
 sq = 'mysql+mysqldb'
 
 if __name__ == '__main__':
-    e =create_engine(f'{sq}://{argv[1]}:{argv[2]}@{h}:3306/{argv[3]}')
+    e = create_engine(f'{sq}://{argv[1]}:{argv[2]}@{h}:3306/{argv[3]}')
 
     # create a session with the sessionmaker
     Session = sessionmaker(bind=e)
