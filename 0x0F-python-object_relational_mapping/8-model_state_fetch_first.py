@@ -26,8 +26,9 @@ if __name__ == '__main__':
     session = Session()
 
     # create a python object and query the database and hold the details
-    data = session.query(State).order_by(State.id)
+    data = session.query(State).order_by(State.id).first()
 
-    for items in data:
-        if items.id < 2:
-            print(f"{items.id}: {items.name}")
+    if data == None:
+        print("Nothing\n")
+    else:
+        print(f"{data.id}: {data.name}")
