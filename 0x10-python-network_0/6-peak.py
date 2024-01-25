@@ -1,9 +1,11 @@
 #!/usr/bin/python3
 """ function for finding a peak on a list """
+
+
 def find_peak(list_of_integers):
     """
     function finds the peak of a list while having the lowerst time complexity
-    
+
     Keyword arguments: list_of_integers
     argument -- a list of integers
     Return: returns the peak of teh list provided
@@ -20,5 +22,4 @@ def find_peak(list_of_integers):
         else:
             low = mid + 1
 
-    return list_of_integers[low]
-    
+    return list_of_integers[low] 
