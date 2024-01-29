@@ -8,6 +8,7 @@ import urllib
 
 
 with urllib.request.urlopen(sys.argv[1]) as item:
+    """Opens the provided argument url"""
     response = item.read()
 
 if __name__ == "__main__":
