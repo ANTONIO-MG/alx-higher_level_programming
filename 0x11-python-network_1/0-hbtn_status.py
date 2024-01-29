@@ -5,7 +5,6 @@ Return: returns the class type, content and encoding method.
 """
 
 import urllib
-import sys
 
 
 with urllib.request.urlopen(sys.argv[1]) as item:
