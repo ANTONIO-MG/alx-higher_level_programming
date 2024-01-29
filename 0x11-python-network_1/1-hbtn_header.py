@@ -1,7 +1,12 @@
 #!/usr/bin/python3
 """Python script that fetches a given argmument url using urllib
 
-Return: returns the class type, content and encoding method.
+Uses urllib and sys packages
+The value of this variable is different for each request
+
+Usage:
+    import urllib
+    ./1-hbtn_header.py https://alx-intranet.hbtn.io
 """
 
 from urllib.request import urlopen

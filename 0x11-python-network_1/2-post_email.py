@@ -1,7 +1,12 @@
 #!/usr/bin/python3
 """Python script that fetches https://alx-intranet.hbtn.io/status using urllib
 
-Return: returns the class type, content and encoding method.
+The email must be sent in the email variable
+Uses the urllib and sys packages
+
+Usage:
+    import urllib
+    ./2-post_email.py http://0.0.0.0:5000/post_email hr@holbertonschool.com
 """
 
 import urllib.request
